@@ -50,6 +50,7 @@
 
   #image {
     width: 100%;
+    border-radius: 10px;
   }
   p {
     padding: 0px 20px 0px 20px;
