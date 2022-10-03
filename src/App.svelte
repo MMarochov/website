@@ -1,9 +1,11 @@
 <script>
   import Work from "./sections/Work.svelte";
+  import Name from "./components/Name.svelte";
 </script>
 
 <main>
-  <Work />
+  <Name/>
+  <Work/>
 </main>
 
 <style>
@@ -13,7 +15,6 @@
   :global(body),
   :global(html) {
     margin: 0;
-    width: 100%;
     height: fit-content;
   }
 

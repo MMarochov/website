@@ -21,7 +21,7 @@ let work_entries = [
             title: "This-OS-Map-Does-Not-Exist",
             image: "images/osmap25kbowmont.svg",
             description: "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
-        }           
+        }          
     ]
 </script>
 
@@ -39,6 +39,7 @@ let work_entries = [
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 5% 0 5% 0;
     }
     .grid-container {
         display: flex;
