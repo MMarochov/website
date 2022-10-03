@@ -11,9 +11,9 @@
 
 </script>
 
-<div id="card">
+<article id="card">
   <div id="im-container">
-    <img id="headshot" src={image} alt={title + " image"} />
+    <img id="image" src={image} alt={title + " image"} />
   </div>
   <h3>{title}</h3>
   <p>{description}</p>
@@ -23,7 +23,7 @@
   {#if webpage}
   <SocialButton href={webpage} src={website_icon} alt="Link to web page"/>
   {/if}
-</div>
+</article>
 
 <style>
   #card {
@@ -48,12 +48,8 @@
     border-radius: 10px;
   }
 
-  #headshot {
-    border-radius: 10px;
-    margin: auto;
+  #image {
     width: 100%;
-    height: 100%;
-    display: block;
   }
   p {
     padding: 0px 20px 0px 20px;
@@ -61,8 +57,9 @@
     text-align: left;
   }
 
-  @media only screen and (max-width: 460px) {
+  @media only screen and (max-width: 360px) {
   #card {
     width: 100%;
+    display: table;
  }}
 </style>

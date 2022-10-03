@@ -24,6 +24,6 @@
   }
 
   img {
-    height: 25px;
+    height: 27px;
   }
 </style>

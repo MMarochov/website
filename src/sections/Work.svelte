@@ -15,15 +15,12 @@ let work_entries = [
             title: "OS Machine Learning Model Hub",
             image: "images/model_hub_logo.PNG",
             description: "I worked with the VisionAI and Research Teams at OS to create a model hub, aiming to reduce duplication of effort and facilitate increased ethical consideration, transparency, and accountability.",
-            icons: "",
-            href: "https://nice-bay-0c89e3803.1.azurestaticapps.net/"
+            webpage: "https://nice-bay-0c89e3803.1.azurestaticapps.net/"
         },
         {
             title: "This-OS-Map-Does-Not-Exist",
-            image: "images/osmap25kbowmont.PNG",
+            image: "images/osmap25kbowmont.svg",
             description: "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
-            icons: "",
-            href: ""
         }           
     ]
 </script>
