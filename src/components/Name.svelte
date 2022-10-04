@@ -54,7 +54,6 @@
     max-width: 960px;
     width: 100%;
     margin-left: 5%;
-
   }
 
   img {
@@ -112,18 +111,31 @@
     }
   }
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1050px) {
     #name-container {
-    display: block;
-  }
+      display: block;
+    }
 
     #text-container {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       flex-direction: column;
       margin-left: 0px;
     }
   }
 
-
+  @media only screen and (max-width: 670px) {
+    h1 {
+      font-size: 4em;
+      max-width: 270px;
+    }
+    .subheading {
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1.1em;
+      max-width: 270px;
+    }
+  }
 </style>

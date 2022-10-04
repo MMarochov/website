@@ -1,14 +1,27 @@
 <script>
-  import Work from "./sections/Work.svelte";
   import Name from "./components/Name.svelte";
+  import About from "./sections/About.svelte";
+  import Work from "./sections/Work.svelte";
 </script>
 
 <main>
-  <Name/>
-  <Work/>
+  <section id="landing-page">
+    <Name />
+    <About>
+      I'm Mel Marochov, a trainee geospatial data scientist and web developer at
+      Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
+      climbing! At work I've been learning some pretty cool things from some
+      pretty cool people, from a wee bit of Python to a fair amount of
+      development... but mainly just an outrageous number of keyboard shortcuts.
+    </About>
+  </section>
+  <Work />
 </main>
 
 <style>
+  #landing-page {
+    height: 100vh;
+  }
   :global(body) {
     padding: 20px;
   }
@@ -47,11 +60,5 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
-  }
-
-  @media (min-width: 640px) {
-    main {
-      max-width: none;
-    }
   }
 </style>
