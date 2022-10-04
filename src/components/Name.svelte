@@ -42,7 +42,6 @@
     display: inline-flex;
     align-items: left;
     max-width: 960px;
-    margin: 5% 0 5% 0;
   }
 
   #text-container {
@@ -50,7 +49,7 @@
     align-items: flex-start;
     font-family: "Lucida Sans Typewriter";
     line-height: 1;
-    height: 220px;
+    min-height: 175px;
     max-width: 960px;
     width: 100%;
     margin-left: 5%;
@@ -58,8 +57,7 @@
 
   img {
     border-radius: 50%;
-    width: 22%;
-    height: 22%;
+    width: 23%;
   }
 
   #name {

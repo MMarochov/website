@@ -1,7 +1,11 @@
 <script>
   import Name from "./components/Name.svelte";
+  import ScrollToTop from "./components/ScrollToTop.svelte";
+  import ScrollArrow from "./components/ScrollArrow.svelte";
+  import Social from "./components/Social.svelte";
   import About from "./sections/About.svelte";
   import Work from "./sections/Work.svelte";
+  import { darkMode } from "./stores/darkMode.js";
 </script>
 
 <main>
@@ -14,13 +18,22 @@
       pretty cool people, from a wee bit of Python to a fair amount of
       development... but mainly just an outrageous number of keyboard shortcuts.
     </About>
+    <Social />
+    <ScrollArrow href="#work" />
   </section>
-  <Work />
+  <ScrollToTop />
+  <section id="work">
+    <Work />
+  </section>
 </main>
 
 <style>
   #landing-page {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
   }
   :global(body) {
     padding: 20px;
@@ -60,5 +73,12 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 670px) {
+    #landing-page {
+      max-width: 500px;
+      margin: auto;
+    }
   }
 </style>
