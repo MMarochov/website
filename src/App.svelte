@@ -11,7 +11,8 @@
 <main>
   <section id="landing-page">
     <Name />
-    <About>
+    <section id="bio">
+      <About>
       I'm Mel Marochov, a trainee geospatial data scientist and web developer at
       Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
       climbing! At work I've been learning some pretty cool things from some
@@ -19,6 +20,8 @@
       development... but mainly just an outrageous number of keyboard shortcuts.
     </About>
     <Social />
+  </section>
+    
     <ScrollArrow href="#work" />
   </section>
   <ScrollToTop />
