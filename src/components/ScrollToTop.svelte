@@ -54,4 +54,14 @@
   :global(main.dark-mode) .back-to-top {
     color: #d7e3f5;
   }
+
+  @media only screen and (max-width: 670px) {
+    span {
+      font-size: 1.5rem;
+    }
+    .back-to-top {
+      right: 8px;
+      bottom: 20px;
+    }
+  }
 </style>
