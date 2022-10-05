@@ -1,5 +1,4 @@
 <!-- ScrollArrow.svelte -->
-
 <script>
   // Props
   export let href;
@@ -25,17 +24,17 @@
     font-size: 1.2rem;
     margin-bottom: 5px;
     color: black;
-    text-decoration: none
+    text-decoration: none;
   }
 
   a {
     display: block;
     align-self: center;
-    margin: 0px 0px 60px 0px;
+    margin: 0px 0px 30px 0px;
   }
-  
+
   a:hover {
-    text-decoration:none; 
+    text-decoration: none;
   }
 
   #arrow {

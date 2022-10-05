@@ -6,9 +6,8 @@
   export let description;
   export let github;
   export let webpage;
-  let github_icon = "images/Github"
-  let website_icon = "images/Website"
-
+  let github_icon = "images/Github";
+  let website_icon = "images/Website";
 </script>
 
 <article id="card">
@@ -18,10 +17,10 @@
   <h3>{title}</h3>
   <p>{description}</p>
   {#if github}
-  <SocialButton href={github} src={github_icon} alt="Link to github page"/>
+    <SocialButton href={github} src={github_icon} alt="Link to github page" />
   {/if}
   {#if webpage}
-  <SocialButton href={webpage} src={website_icon} alt="Link to web page"/>
+    <SocialButton href={webpage} src={website_icon} alt="Link to web page" />
   {/if}
 </article>
 
@@ -59,8 +58,9 @@
   }
 
   @media only screen and (max-width: 360px) {
-  #card {
-    width: 100%;
-    display: table;
- }}
+    #card {
+      width: 100%;
+      display: table;
+    }
+  }
 </style>

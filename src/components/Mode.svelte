@@ -1,12 +1,10 @@
 <!-- Mode.svelte -->
 <script>
-  import {darkMode} from "../stores/darkMode.js";
+  import { darkMode } from "../stores/darkMode.js";
 
- 
   function toggle() {
     $darkMode = !$darkMode;
-    }
-  
+  }
 </script>
 
 <button on:click={toggle}>

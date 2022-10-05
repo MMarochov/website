@@ -1,4 +1,5 @@
 <script>
+  import NavBar from "./components/NavBar.svelte";
   import Name from "./components/Name.svelte";
   import ScrollToTop from "./components/ScrollToTop.svelte";
   import ScrollArrow from "./components/ScrollArrow.svelte";
@@ -9,19 +10,17 @@
 </script>
 
 <main>
+  <NavBar />
   <section id="landing-page">
     <Name />
-    <section id="bio">
-      <About>
+    <About>
       I'm Mel Marochov, a trainee geospatial data scientist and web developer at
       Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
-      climbing! At work I've been learning some pretty cool things from some
-      pretty cool people, from a wee bit of Python to a fair amount of
+      climbing! At work I've been learning so much interesting stuff from
+      talented people, from a wee bit of Python to a fair amount of web
       development... but mainly just an outrageous number of keyboard shortcuts.
     </About>
     <Social />
-  </section>
-    
     <ScrollArrow href="#work" />
   </section>
   <ScrollToTop />
@@ -76,6 +75,12 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+  }
+  @media only screen and (max-width: 1050px) {
+    #landing-page {
+      max-width: 670px;
+      margin: auto;
+    }
   }
 
   @media only screen and (max-width: 670px) {

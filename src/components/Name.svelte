@@ -22,7 +22,7 @@
     <Typed
       strings={[
         "I love web development...",
-        "and I want to be a pro data scientist!",
+        "and I think data science is pretty cool!",
         "oh and also, I think the Earth is flat.",
       ]}
       loop="true"
@@ -112,18 +112,22 @@
   @media only screen and (max-width: 1050px) {
     #name-container {
       display: block;
+      text-align: left;
     }
 
     #text-container {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
       flex-direction: column;
-      margin-left: 0px;
+      margin-left: auto;
+      min-height: 210px;
     }
   }
 
   @media only screen and (max-width: 670px) {
+    #text-container {
+      min-height: 180px;
+    }
     h1 {
       font-size: 4em;
       max-width: 270px;
