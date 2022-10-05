@@ -42,6 +42,7 @@
     display: inline-flex;
     align-items: left;
     max-width: 960px;
+    margin: 10% 0 0 0;
   }
 
   #text-container {
