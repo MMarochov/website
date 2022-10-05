@@ -2,7 +2,7 @@
 This is my personal website, made with Svelte.
 
 ## Dev notes
-- Think about doing names slots so all input text is in app.svelte
+- Think about doing named slots so all input text is in app.svelte
 
 ## Deployment
 
