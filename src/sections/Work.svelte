@@ -28,7 +28,7 @@
 </script>
 
 <section class="work">
-  <h2>My Work</h2>
+  <h2>Work</h2>
   <div class="grid-container">
     {#each work_entries as m}
       <WorkEntry
