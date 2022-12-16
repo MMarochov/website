@@ -14,14 +14,18 @@
 <section id="name-container">
   <img src="images\mel_headshot.jpg" alt="{name}'s profile picture" />
   <section id="text-container">
-    <p class="subheading">It's-a me,</p>
+    <p class="intro">
+      <slot name="intro" />
+    </p>
     <div id="name">
-      <h1 class="neon-text">Melio</h1>
+      <h1 class="neon-text">
+        <slot name="name" />
+      </h1>
       <Mode>Toggle</Mode>
     </div>
     <Typed
       strings={[
-        "I love web development...",
+        "I lovedevelopment...",
         "and I think data science is pretty cool!",
         "oh and also, I think the Earth is flat.",
       ]}
@@ -66,7 +70,7 @@
     align-items: flex-end;
   }
 
-  .subheading {
+  .intro {
     font-family: "Permanent Marker", cursive;
     font-size: 2.2em;
     font-weight: normal;

@@ -13,7 +13,11 @@
 <main>
   <NavBar />
   <section id="landing-page">
-    <Name />
+    <Name>
+      <span slot="intro">It's-a me,</span>
+      <span slot="name">Melio</span>
+      <!-- <span slot="typed"></span> -->
+    </Name>
     <About>
       I'm Mel Marochov, a trainee geospatial data scientist and developer at
       Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
@@ -25,11 +29,13 @@
     <ScrollArrow href="#work" />
   </section>
   <ScrollToTop />
+  <section id="experience">
+    <Experience>
+      <span slot="role">Mel</span>
+    </Experience>
+  </section>
   <section id="work">
     <Work />
-  </section>
-  <section id="experience">
-    <Experience />
   </section>
 </main>
 
