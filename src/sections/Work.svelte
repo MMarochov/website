@@ -8,7 +8,7 @@
       image: "images/SEE_ICE.PNG",
       description:
         "During my Masters I developed and published a paper on a method which uses deep learning to classify Sentinel-2 imagery containing marine-terminating glaciers in Greenland. Click on the link below to take a look.",
-      github: "https://github.com/MMarochov/SEE_ICE",
+      github: "https://github.com/MMarochovDU/SEE_ICE",
       webpage: "https://doi.org/10.5194/tc-15-5041-2021",
     },
     {

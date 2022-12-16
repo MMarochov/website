@@ -12,7 +12,7 @@
   />
 
   <SocialButton
-    href="https://github.com/MMarochovOS"
+    href="https://github.com/MMarochov"
     src="images/Github"
     alt="Github"
   />

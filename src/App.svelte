@@ -5,6 +5,7 @@
   import ScrollArrow from "./components/ScrollArrow.svelte";
   import Social from "./components/Social.svelte";
   import About from "./sections/About.svelte";
+  import Experience from "./sections/Experience.svelte";
   import Work from "./sections/Work.svelte";
   import { darkMode } from "./stores/darkMode.js";
 </script>
@@ -14,11 +15,11 @@
   <section id="landing-page">
     <Name />
     <About>
-      I'm Mel Marochov, a trainee geospatial data scientist and web developer at
+      I'm Mel Marochov, a trainee geospatial data scientist and developer at
       Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
-      climbing! At work I've been learning so much interesting stuff from
+      climbing! At work I've been learning stuff from really
       talented people, from a wee bit of Python to a fair amount of web
-      development... but mainly just an outrageous number of keyboard shortcuts.
+      dev... but mainly just an outrageous number of keyboard shortcuts.
     </About>
     <Social />
     <ScrollArrow href="#work" />
@@ -26,6 +27,9 @@
   <ScrollToTop />
   <section id="work">
     <Work />
+  </section>
+  <section id="experience">
+    <Experience />
   </section>
 </main>
 
