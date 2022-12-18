@@ -25,9 +25,9 @@
     </div>
     <Typed
       strings={[
-        "I'm sort of a developer...",
+        "I'm 64% sure I'm a developer,",
         "and I think data science is pretty cool!",
-        "oh and also, the Earth is flat.",
+        "oh also, the Earth is flat.",
       ]}
       loop="true"
       typeSpeed="9"

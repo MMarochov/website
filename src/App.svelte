@@ -12,6 +12,15 @@
     {
       open: true,
       org: "Ordnance Survey",
+      role: "Graduate Technical Consultant",
+      months: "September - present",
+      years: "2022/23",
+      description:
+        "As part of the Developer Experience team within Consultancy and Technical Services, I've worked on a variety of projects, from shaping a critical dataset underpinning the census, to making an ineractive webmap for a famous person.",
+    },
+    {
+      open: false,
+      org: "Ordnance Survey",
       role: "Graduate Data Scientist",
       months: "April - September",
       years: "2022",
@@ -25,7 +34,7 @@
       months: "September - March",
       years: "2021/22",
       description:
-        "For my first placement on the OS Grad scheme I joined the Research and Innovation teams. In this placement I focused on advancing OS' efforts to incorporate ethical practice in their workflows which use geospatial data and artificial intelligence (GeoAI). Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and creating a Model Hub for OS' re-usable machine learning algorithms.",
+        "For my first placement on the OS Grad scheme I joined the Research and Innovation teams. I focused on advancing OS' efforts to incorporate ethical practice in their workflows which use geospatial data and artificial intelligence (GeoAI). Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and creating a Model Hub for OS's machine learning algorithms.",
     },
     {
       open: false,
@@ -34,7 +43,7 @@
       months: "October - January",
       years: "2019 - 2021",
       description:
-        "The crux of my postgraduate research was to develop a method which uses deep learning for semantic segmentation of Sentinel-2 satellite imagery containing marine-terminating glaciers in Greenland. I published a paper in one of the top peer-reviewed glaciology journals, presented at the EGU2020: Sharing Geoscience Online conference, and demonstrated in undergraduate Remote Sensing practicals. To see what I made, checkout the Work section below!",
+        "The crux of my postgraduate research was to develop a method which uses deep learning for semantic segmentation of Sentinel-2 satellite imagery containing marine-terminating glaciers in Greenland. I published a paper in one of the top peer-reviewed glaciology journals, presented at the EGU2020: Sharing Geoscience Online conference, and demonstrated in undergraduate Remote Sensing practicals. To see what I made, checkout the Work section below.",
     },
     {
       open: false,
@@ -43,7 +52,7 @@
       months: "October - July",
       years: "2016 - 2019",
       description:
-        "I pursued my passion for Geography by undertaking a B.Sc. degree at Durham University, specialising in glaciology in my final year and writing a dissertation on the evolution of supraglacial meltwater features on an ice shelf in East Antarctica. This degree took me all over the UK, to Portugal and to Iceland, and to top it all off I was awarded The Willimott Prize for graduating with the second highest grade in my year.",
+        "I pursued my passion for Geography by undertaking a B.Sc. degree at Durham University. I specialised in glaciology in my final year and wrote a dissertation on the evolution of supraglacial meltwater features on an ice shelf in East Antarctica. This degree took me all over the UK, to Portugal and to Iceland!",
     },
   ];
 </script>
@@ -58,10 +67,10 @@
     </Name>
     <About>
       I'm Mel Marochov, a trainee geospatial data scientist and developer at
-      Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
-      climbing! At work I've been learning stuff from really talented people,
+      Ordnance Survey. In my spare time I love skateboarding, wild swimming, and climbing! Over the past year or so I've had the chance to learn a lot of interesting stuff from very talented people, ranging from Python and web dev to geoAI ethics and data visualisation... but I'm only just beginning to scratch the surface.
+      <!--  At work I've been learning stuff from really talented people,
       from a wee bit of Python to a fair amount of web dev... but mainly just an
-      outrageous number of keyboard shortcuts.
+      outrageous number of keyboard shortcuts. -->
     </About>
     <Social />
     <ScrollArrow href="#experience" />
