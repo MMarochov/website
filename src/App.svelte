@@ -16,7 +16,7 @@
       months: "September - present",
       years: "2022/23",
       description:
-        "As part of the Developer Experience team within Consultancy and Technical Services, I've worked on a variety of projects, from shaping a critical dataset underpinning the census, to making an ineractive webmap for a famous person.",
+        "As part of the Developer Experience team within Consultancy and Technical Services at OS, I've worked on a variety of projects, from shaping a critical dataset underpinning the census, to making an interactive webmap for a famous person.",
     },
     {
       open: false,
@@ -25,7 +25,7 @@
       months: "April - September",
       years: "2022",
       description:
-        "My second placement on the Graduate scheme at Ordnance Survey saw me joining the Rapid Prototyping Team and getting thrown in at the deep end of data science. Having the chance to work on a diverse array of  projects has led me to enhance a variety of skills, from Python programming to agile development. On my first day in the team I didn't have the foggiest clue how to build a website, but now I've made this one, and discovered a new passion in the process! Creating cool prototypes using geospatial data in a fast-paced (and fun) environment has made this my favourite placement so far.",
+        "My second placement on the Graduate scheme at Ordnance Survey saw me joining the Rapid Prototyping Team and getting thrown in at the deep end of data science with a bunch of super proficient developers. Having the chance to work on a diverse array of  projects led me to enhance a variety of skills, from Python programming to agile development. On my first day in the team I didn't have the foggiest clue how to build a website, but now I've made this one, and discovered a new passion in the process! Creating cool prototypes using geospatial data in a fast-paced (and fun) environment made it my favourite placement.",
     },
     {
       open: false,

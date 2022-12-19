@@ -10,7 +10,6 @@
     src="images/LinkedIn"
     alt="LinkedIn"
   />
-
   <SocialButton
     href="https://github.com/MMarochov"
     src="images/Github"

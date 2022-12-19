@@ -17,10 +17,10 @@
   <h3>{title}</h3>
   <p>{description}</p>
   {#if github}
-    <SocialButton href={github} src={github_icon} alt="Link to github page" />
+  <SocialButton href={github} src={github_icon} alt="Link to github page"/>
   {/if}
   {#if webpage}
-    <SocialButton href={webpage} src={website_icon} alt="Link to web page" />
+  <SocialButton href={webpage} src={website_icon} alt="Link to web page"/>
   {/if}
 </article>
 

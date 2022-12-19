@@ -25,7 +25,7 @@
     </div>
     <Typed
       strings={[
-        "I'm a developer,",
+        "I like making things,",
         "and I think data science is pretty cool!",
         "oh also, the Earth is flat.",
       ]}

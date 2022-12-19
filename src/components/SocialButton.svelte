@@ -9,14 +9,12 @@
   let light = "_lightmode.svg";
 </script>
 
-<a {href} target="_blank">
-  {#if $darkMode}
-    <img src="{src}{dark}" {alt} />
-  {:else}
-    <img src="{src}{light}" {alt} />
-  {/if}
-  <slot />
-</a>
+<a {href} target="_blank"
+  >{#if $darkMode}<img src="{src}{dark}" {alt} />{:else}<img
+      src="{src}{light}"
+      {alt}
+    />{/if}<slot /></a
+>
 
 <style>
   a {
