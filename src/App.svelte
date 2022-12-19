@@ -57,49 +57,55 @@
   ];
 </script>
 
-<main>
-  <NavBar />
-  <section id="landing-page">
-    <Name>
-      <span slot="intro">It's-a me,</span>
-      <span slot="name">Melio</span>
-      <!-- <span slot="typed"></span> -->
-    </Name>
-    <About>
-      I'm Mel Marochov, a trainee geospatial data scientist and developer at
-      Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
-      climbing! Over the past year or so I've had the chance to learn a lot of
-      interesting stuff from very talented people, ranging from Python and web
-      dev to geoAI ethics and data visualisation... but I'm only just beginning
-      to scratch the surface.
-      <!--  At work I've been learning stuff from really talented people,
-      from a wee bit of Python to a fair amount of web dev... but mainly just an
-      outrageous number of keyboard shortcuts. -->
-    </About>
-    <Social />
-    <ScrollArrow href="#experience" />
-  </section>
-  <ScrollToTop />
-  <section id="experience">
-    <h2>Experience</h2>
-    <!-- To edit experience entries on the timeline, edit the experiences variable declared above -->
-    {#each experiences as e}
-      <Timeline
-        open={e.open}
-        org={e.org}
-        role={e.role}
-        months={e.months}
-        years={e.years}
-        description={e.description}
-      />
-    {/each}
-  </section>
-  <section id="work">
-    <Work />
-  </section>
+<main class={$darkMode ? "dark-mode" : ""}>
+  <article class="container">
+    <NavBar />
+    <section id="landing-page">
+      <Name>
+        <span slot="intro">It's-a me,</span>
+        <span slot="name">Melio</span>
+        <!-- <span slot="typed"></span> -->
+      </Name>
+      <About>
+        I'm Mel Marochov, a trainee geospatial data scientist and developer at
+        Ordnance Survey. In my spare time I love skateboarding, wild swimming,
+        and climbing! Over the past year or so I've had the chance to learn a
+        lot of interesting stuff from very talented people, ranging from Python
+        and web dev to geoAI ethics and data visualisation... but I'm only just
+        beginning to scratch the surface.
+        <!--  At work I've been learning stuff from really talented people,
+        from a wee bit of Python to a fair amount of web dev... but mainly just an
+        outrageous number of keyboard shortcuts. -->
+      </About>
+      <Social />
+      <ScrollArrow href="#experience" />
+    </section>
+    <ScrollToTop />
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- To edit experience entries on the timeline, edit the experiences variable declared above -->
+      {#each experiences as e}
+        <Timeline
+          open={e.open}
+          org={e.org}
+          role={e.role}
+          months={e.months}
+          years={e.years}
+          description={e.description}
+        />
+      {/each}
+    </section>
+    <section id="work">
+      <Work />
+    </section>
+  </article>
 </main>
 
 <style>
+  :global(main.dark-mode) {
+    background-color: #225782;
+    color: #d7e3f5;
+  }
   #landing-page {
     height: 100vh;
     display: flex;
@@ -109,59 +115,51 @@
   }
 
   #experience {
-    padding-top: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  #work {
-    padding-top: 10%;
+  #work,
+  #experience {
+    padding: 5% 0 5%;
   }
-  :global(body) {
-    padding: 20px;
-  }
+
   :global(body),
   :global(html) {
     margin: 0;
-    height: fit-content;
   }
 
-  :global(html) {
+  :global(main) {
     background: radial-gradient(
-        circle at 6.7% 50%,
-        rgba(149, 116, 252, 0.5),
-        rgba(0, 0, 255, 0) 90.71%
+        circle at 65% 8%,
+        rgba(255, 0, 0, 0.3),
+        rgba(255, 0, 0, 0) 80.71%
       ),
       radial-gradient(
-        circle at 70% 8%,
-        rgba(255, 0, 0, 0.45),
-        rgba(255, 0, 0, 0) 90.71%
+        circle at 6.7% 70%,
+        rgba(149, 116, 252, 0.6),
+        rgba(0, 0, 255, 0) 70.71%
       ),
       
       radial-gradient(
-        circle at 70% 30%,
-        rgb(92, 249, 220),
-        rgba(0, 255, 0, 0) 90.71%
+        circle at 95% 35%,
+        rgba(116, 252, 227, 0.7),
+        rgba(0, 255, 0, 0) 70.71%
       ),
       radial-gradient(
-        circle at 60% 100%,
-        rgba(255, 0, 110, 0.45),
-        rgba(255, 0, 0, 0) 90.71%
-      ),
-      radial-gradient(
-        circle at 5% 80%,
-        rgb(92, 249, 220),
-        rgba(0, 255, 0, 0) 90.71%
+        circle at 17% 100%,
+        rgba(255, 0, 0, 0.25),
+        rgba(255, 0, 0, 0) 80.71%
       ),
       white;
   }
 
-  main {
+  .container {
     text-align: center;
     width: 100%;
-    max-width: 960px;
     margin: 0 auto;
+    max-width: 960px;
   }
   @media only screen and (max-width: 1050px) {
     #landing-page {

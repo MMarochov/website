@@ -9,7 +9,7 @@
   let light = "_lightmode.svg";
 </script>
 
-<a {href} target="_blank"
+<a {href} target="_blank" rel="noreferrer"
   >{#if $darkMode}<img src="{src}{dark}" {alt} />{:else}<img
       src="{src}{light}"
       {alt}

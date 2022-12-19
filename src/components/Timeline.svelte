@@ -118,6 +118,14 @@
     box-shadow: 1px 1px 6px #0000003a, -1px -1px 6px #0000001f;
   }
 
+  :global(main.dark-mode) #timeline-entry:before {
+    background: #d7e3f5;
+	}
+
+  :global(main.dark-mode) #timeline-entry:after {
+    background: #d7e3f5;
+	}
+
   @media only screen and (max-width: 1050px) {
     #timeline {
       max-width: 80%;

@@ -97,7 +97,6 @@
     letter-spacing: 0.1em;
     font-weight: bold;
     margin: 0px;
-    font-size: 6.2rem;
     color: #fff;
     animation: pulsate 0.11s ease-in-out infinite alternate;
   }

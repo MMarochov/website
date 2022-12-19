@@ -26,6 +26,10 @@
     color: black;
     text-decoration: none;
   }
+  
+  :global(main.dark-mode) p {
+    color: #d7e3f5;
+  }
 
   a {
     display: block;
