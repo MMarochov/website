@@ -2,7 +2,10 @@
 This is my personal website, made with Svelte.
 
 ## Dev notes
+- Fix dark mode
 - Think about doing named slots so all input text is in app.svelte
+- Mouse Message
+- CV download / view
 
 ## Deployment
 

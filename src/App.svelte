@@ -129,24 +129,30 @@
 
   :global(html) {
     background: radial-gradient(
-        circle at 50% 20%,
-        rgba(255, 0, 0, 0.3),
-        rgba(255, 0, 0, 0) 70.71%
+        circle at 6.7% 50%,
+        rgba(149, 116, 252, 0.5),
+        rgba(0, 0, 255, 0) 90.71%
       ),
       radial-gradient(
-        circle at 6.7% 80%,
-        rgba(149, 116, 252, 0.7),
-        rgba(0, 0, 255, 0) 70.71%
+        circle at 70% 8%,
+        rgba(255, 0, 0, 0.45),
+        rgba(255, 0, 0, 0) 90.71%
+      ),
+      
+      radial-gradient(
+        circle at 70% 30%,
+        rgb(92, 249, 220),
+        rgba(0, 255, 0, 0) 90.71%
       ),
       radial-gradient(
-        circle at 75% 55%,
-        rgba(116, 252, 227, 0.6),
-        rgba(0, 255, 0, 0) 70.71%
+        circle at 60% 100%,
+        rgba(255, 0, 110, 0.45),
+        rgba(255, 0, 0, 0) 90.71%
       ),
       radial-gradient(
-        circle at 45% 100%,
-        rgba(255, 0, 110, 0.4),
-        rgba(0, 0, 255, 0) 70.71%
+        circle at 5% 80%,
+        rgb(92, 249, 220),
+        rgba(0, 255, 0, 0) 90.71%
       ),
       white;
   }
