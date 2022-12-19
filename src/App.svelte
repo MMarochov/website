@@ -4,8 +4,8 @@
   import ScrollToTop from "./components/ScrollToTop.svelte";
   import ScrollArrow from "./components/ScrollArrow.svelte";
   import Social from "./components/Social.svelte";
+  import Timeline from "./components/Timeline.svelte";
   import About from "./sections/About.svelte";
-  import Experience from "./sections/Experience.svelte";
   import Work from "./sections/Work.svelte";
   import { darkMode } from "./stores/darkMode.js";
   const experiences = [
@@ -67,7 +67,11 @@
     </Name>
     <About>
       I'm Mel Marochov, a trainee geospatial data scientist and developer at
-      Ordnance Survey. In my spare time I love skateboarding, wild swimming, and climbing! Over the past year or so I've had the chance to learn a lot of interesting stuff from very talented people, ranging from Python and web dev to geoAI ethics and data visualisation... but I'm only just beginning to scratch the surface.
+      Ordnance Survey. In my spare time I love skateboarding, wild swimming, and
+      climbing! Over the past year or so I've had the chance to learn a lot of
+      interesting stuff from very talented people, ranging from Python and web
+      dev to geoAI ethics and data visualisation... but I'm only just beginning
+      to scratch the surface.
       <!--  At work I've been learning stuff from really talented people,
       from a wee bit of Python to a fair amount of web dev... but mainly just an
       outrageous number of keyboard shortcuts. -->
@@ -78,15 +82,16 @@
   <ScrollToTop />
   <section id="experience">
     <h2>Experience</h2>
-    <!-- To edit experience entries, edit the experiences variable declared above -->
+    <!-- To edit experience entries on the timeline, edit the experiences variable declared above -->
     {#each experiences as e}
-      <Experience>
-        <span slot="year">{e.years}</span>
-        <span slot="months">{e.months}</span>
-        <span slot="role">{e.role}</span>
-        <span slot="org">{e.org}</span>
-        <span slot="description">{e.description}</span>
-      </Experience>
+      <Timeline
+        open={e.open}
+        org={e.org}
+        role={e.role}
+        months={e.months}
+        years={e.years}
+        description={e.description}
+      />
     {/each}
   </section>
   <section id="work">
