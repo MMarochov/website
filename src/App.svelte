@@ -80,15 +80,18 @@
     {
       title: "Mapping the Irish Sea Ice Stream",
       image: "images/bgs_map.PNG",
-      description: "I helped make a map published by BGS. It shows the sea floor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
-      webpage: "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/"
+      description:
+        "I helped make a map published by BGS. It shows the sea floor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
+      webpage:
+        "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/",
     },
     {
       title: "Seal A Better Place",
       image: "images/seal_a_better_place.gif",
-      description: "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the movement of the seal.",
-      github: "https://github.com/MMarochov/sealz"
-    }
+      description:
+        "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the movement of the seal during 2008.",
+      github: "https://github.com/MMarochov/sealz",
+    },
   ];
 </script>
 
@@ -126,6 +129,7 @@
           description={e.description}
         />
       {/each}
+      <a id="download" download href="images/rick.jpg">Download CV</a>
     </section>
     <section class="work">
       <h2>Work</h2>
@@ -142,6 +146,7 @@
       </div>
     </section>
   </article>
+  <footer>Designed by Mel Marochov | 2023</footer>
 </main>
 
 <style>
@@ -182,7 +187,7 @@
     flex-direction: column;
     align-items: center;
     margin: 5% 0 5% 0;
-    padding: 5% 0 15%;
+    padding: 5% 0 5%;
   }
 
   .grid-container {
@@ -225,6 +230,14 @@
         rgba(0, 255, 0, 0) 70.71%
       ),
       white;
+  }
+
+  footer {
+    width: 100%;
+    font-family: "Lucida Sans Typewriter";
+    text-align: center;
+    padding: 50px 0;
+    transition: 0.6s ease-out;
   }
 
   @media only screen and (max-width: 1100px) {
