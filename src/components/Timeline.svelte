@@ -50,6 +50,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.1rem;
+    font-weight: 490;
   }
 
   #date {

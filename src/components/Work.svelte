@@ -29,7 +29,7 @@
   #card {
     background: transparent;
     width: 300px;
-    height: 390px;
+    height: 435px;
     border-radius: 10px;
     box-shadow: 1px 1px 6px #0000003a, -1px -1px 6px #0000001f;
   }
@@ -46,6 +46,9 @@
     contain: content;
     margin: 15px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   #image {
@@ -54,7 +57,7 @@
   }
   p {
     padding: 0px 20px 0px 20px;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: left;
   }
 

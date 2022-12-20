@@ -8,7 +8,8 @@
   p {
     display: inline-block;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.15em;
+    font-weight: 490;
     margin: 0px;
   }
 

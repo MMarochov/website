@@ -16,7 +16,7 @@
       months: "September - present",
       years: "2022/23",
       description:
-        "As part of the Developer Experience team within Consultancy and Technical Services at OS, I've worked on a variety of projects, from shaping a critical dataset underpinning the census, to making an interactive webmap for a famous person.",
+        "As part of the Developer Experience team within Consultancy and Technical Services at OS, I've worked on shaping a critical national dataset that will underpin the census and now I'm making an interactive webmap for a famous person!",
     },
     {
       open: false,
@@ -25,7 +25,7 @@
       months: "April - September",
       years: "2022",
       description:
-        "My second placement on the Graduate scheme at Ordnance Survey saw me joining the Rapid Prototyping Team and getting thrown in at the deep end of data science with a bunch of super proficient developers. Having the chance to work on a diverse array of  projects led me to enhance a variety of skills, from Python programming to agile development. On my first day in the team I didn't have the foggiest clue how to build a website, but now I've made this one, and discovered a new passion in the process! Creating cool prototypes using geospatial data in a fast-paced (and fun) environment made it my favourite placement.",
+        "After six months on the Ordnance Survey Graduate Scheme, I joined the Rapid Prototyping Team and got thrown in at the deep end of data science with a bunch of super proficient developers. Having the chance to work on a diverse array of  projects led me to enhance a variety of skills, from Python programming to agile development. On my first day in the team I didn't have the foggiest clue how to build a website, but now I've made this one, yey! Creating cool prototypes using geospatial data in a fast-paced (and fun) environment made the RPT my favourite placement.",
     },
     {
       open: false,
@@ -52,7 +52,7 @@
       months: "October - July",
       years: "2016 - 2019",
       description:
-        "I pursued my passion for Geography by undertaking a B.Sc. degree at Durham University. I specialised in glaciology in my final year and wrote a dissertation on the evolution of supraglacial meltwater features on an ice shelf in East Antarctica. This degree took me all over the UK, to Portugal and to Iceland!",
+        "I just love Geography. So I skidaddled off and got a B.Sc. degree at Durham University. I specialised in glaciology in my final year and wrote a dissertation on the evolution of supraglacial meltwater features on an ice shelf in East Antarctica. This degree took me all over the UK, to Portugal and to Iceland!",
     },
   ];
   const workEntries = [
@@ -60,7 +60,7 @@
       title: "SEE_ICE",
       image: "images/SEE_ICE.PNG",
       description:
-        "During my Masters I developed and published a paper on a method which uses deep learning to classify Sentinel-2 imagery containing marine-terminating glaciers in Greenland. Click on the link below to take a look.",
+        "During my Masters I developed and published a method which uses deep learning to classify Sentinel-2 imagery containing marine-terminating glaciers in Greenland. Here's some links:",
       github: "https://github.com/MMarochovDU/SEE_ICE",
       webpage: "https://doi.org/10.5194/tc-15-5041-2021",
     },
@@ -73,10 +73,22 @@
     },
     {
       title: "This-OS-Map-Does-Not-Exist",
-      image: "images/osmap25kbowmont.svg",
+      image: "images/osmap_blur.PNG",
       description:
         "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
     },
+    {
+      title: "Mapping the Irish Sea Ice Stream",
+      image: "images/bgs_map.PNG",
+      description: "I helped make a map published by BGS. It shows the sea floor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
+      webpage: "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/"
+    },
+    {
+      title: "Seal A Better Place",
+      image: "images/seal_a_better_place.gif",
+      description: "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the movement of the seal.",
+      github: "https://github.com/MMarochov/sealz"
+    }
   ];
 </script>
 
@@ -94,7 +106,7 @@
         Ordnance Survey. In my spare time I love skateboarding, wild swimming,
         and climbing! Over the past year or so I've had the chance to learn a
         lot of interesting stuff from very talented people, ranging from Python
-        and web dev to geoAI ethics and data visualisation... but I'm only just
+        and web dev to data visualisation and GeoAI ethics... but I'm only just
         beginning to scratch the surface.
       </About>
       <Social />
@@ -134,7 +146,7 @@
 
 <style>
   :global(main.dark-mode) {
-    background-color: #225782;
+    background-color: #1e4b70;
     color: #d7e3f5;
   }
 
@@ -147,8 +159,7 @@
 
   section h2 {
     font-family: "Permanent Marker", cursive;
-    font-size: 1.5rem;
-    font-weight: inherit;
+    font-size: 1.6rem;
   }
 
   #landing-page {
@@ -171,7 +182,7 @@
     flex-direction: column;
     align-items: center;
     margin: 5% 0 5% 0;
-    padding: 5% 0 5%;
+    padding: 5% 0 15%;
   }
 
   .grid-container {
@@ -194,7 +205,7 @@
         rgba(255, 0, 0, 0) 80.71%
       ),
       radial-gradient(
-        circle at 6.7% 70%,
+        circle at 6.7% 60%,
         rgba(149, 116, 252, 0.6),
         rgba(0, 0, 255, 0) 70.71%
       ),
@@ -204,9 +215,14 @@
         rgba(0, 255, 0, 0) 70.71%
       ),
       radial-gradient(
-        circle at 17% 100%,
+        circle at 95% 100%,
         rgba(255, 0, 0, 0.25),
         rgba(255, 0, 0, 0) 80.71%
+      ),
+      radial-gradient(
+        circle at 8% 100%,
+        rgba(116, 252, 227, 0.7),
+        rgba(0, 255, 0, 0) 70.71%
       ),
       white;
   }
