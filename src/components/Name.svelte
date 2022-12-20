@@ -113,7 +113,7 @@
     }
   }
 
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 1100px) {
     #name-container {
       display: block;
       text-align: left;
@@ -129,14 +129,20 @@
   }
 
   @media only screen and (max-width: 670px) {
+    #name-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
     #text-container {
       min-height: 180px;
+      align-items: center;
     }
     h1 {
       font-size: 4em;
       max-width: 270px;
     }
-    .subheading {
+    .intro {
       font-size: 1.5em;
     }
     h2 {

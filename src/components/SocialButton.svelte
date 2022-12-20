@@ -24,4 +24,8 @@
   img {
     height: 27px;
   }
+
+  img:hover {
+    height: 30px;
+  }
 </style>

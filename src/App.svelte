@@ -5,8 +5,8 @@
   import ScrollArrow from "./components/ScrollArrow.svelte";
   import Social from "./components/Social.svelte";
   import Timeline from "./components/Timeline.svelte";
+  import Work from "./components/Work.svelte";
   import About from "./sections/About.svelte";
-  import Work from "./sections/Work.svelte";
   import { darkMode } from "./stores/darkMode.js";
   const experiences = [
     {
@@ -55,6 +55,29 @@
         "I pursued my passion for Geography by undertaking a B.Sc. degree at Durham University. I specialised in glaciology in my final year and wrote a dissertation on the evolution of supraglacial meltwater features on an ice shelf in East Antarctica. This degree took me all over the UK, to Portugal and to Iceland!",
     },
   ];
+  const workEntries = [
+    {
+      title: "SEE_ICE",
+      image: "images/SEE_ICE.PNG",
+      description:
+        "During my Masters I developed and published a paper on a method which uses deep learning to classify Sentinel-2 imagery containing marine-terminating glaciers in Greenland. Click on the link below to take a look.",
+      github: "https://github.com/MMarochovDU/SEE_ICE",
+      webpage: "https://doi.org/10.5194/tc-15-5041-2021",
+    },
+    {
+      title: "OS Machine Learning Model Hub",
+      image: "images/model_hub_logo.PNG",
+      description:
+        "I worked with the VisionAI and Research Teams at OS to create a model hub, aiming to reduce duplication of effort and facilitate increased ethical consideration, transparency, and accountability.",
+      webpage: "https://nice-bay-0c89e3803.1.azurestaticapps.net/",
+    },
+    {
+      title: "This-OS-Map-Does-Not-Exist",
+      image: "images/osmap25kbowmont.svg",
+      description:
+        "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
+    },
+  ];
 </script>
 
 <main class={$darkMode ? "dark-mode" : ""}>
@@ -73,9 +96,6 @@
         lot of interesting stuff from very talented people, ranging from Python
         and web dev to geoAI ethics and data visualisation... but I'm only just
         beginning to scratch the surface.
-        <!--  At work I've been learning stuff from really talented people,
-        from a wee bit of Python to a fair amount of web dev... but mainly just an
-        outrageous number of keyboard shortcuts. -->
       </About>
       <Social />
       <ScrollArrow href="#experience" />
@@ -95,8 +115,19 @@
         />
       {/each}
     </section>
-    <section id="work">
-      <Work />
+    <section class="work">
+      <h2>Work</h2>
+      <div class="grid-container">
+        {#each workEntries as w}
+          <Work
+            image={w.image}
+            title={w.title}
+            description={w.description}
+            github={w.github}
+            webpage={w.webpage}
+          />
+        {/each}
+      </div>
     </section>
   </article>
 </main>
@@ -106,11 +137,25 @@
     background-color: #225782;
     color: #d7e3f5;
   }
+
+  .container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  section h2 {
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.5rem;
+    font-weight: inherit;
+  }
+
   #landing-page {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     position: relative;
   }
 
@@ -118,11 +163,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5% 0 5%;
   }
 
-  #work,
-  #experience {
+  .work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 5% 0;
     padding: 5% 0 5%;
+  }
+
+  .grid-container {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
 
   :global(body),
@@ -141,7 +198,6 @@
         rgba(149, 116, 252, 0.6),
         rgba(0, 0, 255, 0) 70.71%
       ),
-      
       radial-gradient(
         circle at 95% 35%,
         rgba(116, 252, 227, 0.7),
@@ -155,13 +211,7 @@
       white;
   }
 
-  .container {
-    text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 960px;
-  }
-  @media only screen and (max-width: 1050px) {
+  @media only screen and (max-width: 1100px) {
     #landing-page {
       max-width: 670px;
       margin: auto;

@@ -1,8 +1,9 @@
+<!-- Work.svelte -->
 <script>
-  import SocialButton from "../components/SocialButton.svelte";
+  import SocialButton from "./SocialButton.svelte";
 
-  export let image;
   export let title;
+  export let image;
   export let description;
   export let github;
   export let webpage;
@@ -17,10 +18,10 @@
   <h3>{title}</h3>
   <p>{description}</p>
   {#if github}
-  <SocialButton href={github} src={github_icon} alt="Link to github page"/>
+    <SocialButton href={github} src={github_icon} alt="Link to github page" />
   {/if}
   {#if webpage}
-  <SocialButton href={webpage} src={website_icon} alt="Link to web page"/>
+    <SocialButton href={webpage} src={website_icon} alt="Link to web page" />
   {/if}
 </article>
 
@@ -30,7 +31,7 @@
     width: 300px;
     height: 390px;
     border-radius: 10px;
-    box-shadow: 0 0 6px rgb(0 0 0 / 40%);
+    box-shadow: 1px 1px 6px #0000003a, -1px -1px 6px #0000001f;
   }
 
   h3 {

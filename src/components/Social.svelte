@@ -20,5 +20,6 @@
 <style>
   div {
     display: flex;
+    height: 30px;
   }
 </style>
