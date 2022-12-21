@@ -2,7 +2,7 @@
 This is my personal website, made with Svelte.
 
 ## Dev notes
-- Think about doing named slots so all input text is in app.svelte
+- All input text is in app.svelte (named slots?)
 - Mouse Message
 - CV download / view
 
