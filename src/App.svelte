@@ -129,9 +129,11 @@
           description={e.description}
         />
       {/each}
-      <a id="download" download href="images/rick.jpg">Download CV</a>
+      <section id="cv-download">
+        <a id="download" download href="images/rick.jpg">Download CV</a>
+      </section>
     </section>
-    <section class="work">
+    <section id="work">
       <h2>Work</h2>
       <div class="grid-container">
         {#each workEntries as w}
@@ -159,6 +161,10 @@
     background: #d7e3f5;
     color: #7f77a6;
   }
+  #cv-download {
+    height: 50px;
+    margin: 45px;
+  }
 
   #download:hover {
     padding: 10px;
@@ -169,11 +175,12 @@
     color: #baaec8;
     text-decoration: none;
     padding: 8px;
-    margin: 35px;
+  
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
     font-size: 1.2rem;
     width: 20%;
+    height: 30px;
   }
 
   .container {
@@ -203,11 +210,10 @@
     padding: 5% 0 5%;
   }
 
-  .work {
+  #work {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5% 0 5% 0;
     padding: 5% 0 5%;
   }
 
@@ -256,6 +262,7 @@
   footer {
     width: 100%;
     font-family: "Lucida Sans Typewriter";
+    font-weight: bold;
     text-align: center;
     padding: 50px 0;
     transition: 0.6s ease-out;
