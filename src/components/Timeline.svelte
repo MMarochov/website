@@ -121,11 +121,11 @@
 
   :global(main.dark-mode) #timeline-entry:before {
     background: #d7e3f5;
-	}
+  }
 
   :global(main.dark-mode) #timeline-entry:after {
     background: #d7e3f5;
-	}
+  }
 
   :global(main.dark-mode) #panel:hover {
     background: rgb(215, 227, 245, 0.15);
@@ -182,7 +182,6 @@
       justify-content: left;
       padding: 0.6rem;
       background: rgba(0, 0, 0, 0.023);
-      
     }
 
     #date {
@@ -202,7 +201,11 @@
     }
 
     #panel:hover {
-    background: none;
-  }
+      background: none;
+    }
+
+    :global(main.dark-mode) #panel:hover {
+      background: none;
+    }
   }
 </style>
