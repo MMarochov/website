@@ -18,4 +18,7 @@ Then run the following commands in the terminal:
 - ```npm run build```
 - ```npm run deploy```
 
-And watch Actions do some magic!
+If re-deploying, don't forget to ```git merge origin/main``` to bring changes from the ```main``` branch to ```gh-pages```.
+
+
+Then watch Actions do some magic!

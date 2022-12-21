@@ -128,7 +128,6 @@
 
   :global(main.dark-mode) #panel:hover {
     background: rgb(215, 227, 245, 0.15);
-    border-radius: 10px;
   }
 
   @media only screen and (max-width: 1050px) {
