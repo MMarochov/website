@@ -89,7 +89,7 @@
       title: "Seal A Better Place",
       image: "images/seal_a_better_place.gif",
       description:
-        "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the movement of the seal during 2008.",
+        "This November I took part in the #30DayMapChallenge. This seal gif is my favourite map - I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey during 2008.",
       github: "https://github.com/MMarochov/sealz",
     },
   ];

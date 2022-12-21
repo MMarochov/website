@@ -1,7 +1,18 @@
 <!-- ScrollToTop.svelte -->
 <script>
-  export let showOnPx = 150;
   let hidden = true;
+  let showOnPx;
+
+  calcShowOnPx();
+  window.addEventListener("resize", calcShowOnPx);
+
+  function calcShowOnPx() {
+    if (window.matchMedia("(max-width: 810px)").matches) {
+      showOnPx = 3400;
+    } else {
+      showOnPx = 150;
+    }
+  }
 
   function goTop() {
     document.body.scrollIntoView({
@@ -57,11 +68,12 @@
 
   @media only screen and (max-width: 670px) {
     span {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
     .back-to-top {
-      right: 8px;
-      bottom: 20px;
+      bottom: 10px;
+      width: 90%;
+      position: fixed;
     }
   }
 </style>

@@ -74,7 +74,6 @@
     width: 70%;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
     padding: 1rem;
     cursor: pointer;
@@ -82,7 +81,6 @@
 
   #panel:hover {
     background: rgba(0, 0, 0, 0.023);
-    border-radius: 10px;
   }
 
   button {
@@ -202,5 +200,9 @@
       background: 0;
       align-items: flex-start;
     }
+
+    #panel:hover {
+    background: none;
+  }
   }
 </style>

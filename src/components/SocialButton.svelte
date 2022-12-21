@@ -18,7 +18,7 @@
 
 <style>
   a {
-    padding-right: 15px;
+    padding: 5px;
   }
 
   img {

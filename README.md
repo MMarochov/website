@@ -2,7 +2,6 @@
 This is my personal website, made with Svelte.
 
 ## Dev notes
-- Still needs better responsive-ness on mobile
 - All input text is in app.svelte (named slots?)
 - Mouse message
 - CV download / view
