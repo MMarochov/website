@@ -155,6 +155,27 @@
     color: #d7e3f5;
   }
 
+  :global(main.dark-mode) #download {
+    background: #d7e3f5;
+    color: #7f77a6;
+  }
+
+  #download:hover {
+    padding: 10px;
+  }
+
+  #download {
+    background: black;
+    color: #baaec8;
+    text-decoration: none;
+    padding: 8px;
+    margin: 35px;
+    border-radius: 5px;
+    font-family: "Permanent Marker", cursive;
+    font-size: 1.2rem;
+    width: 20%;
+  }
+
   .container {
     text-align: center;
     width: 100%;
