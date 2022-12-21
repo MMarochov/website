@@ -83,7 +83,7 @@
       title: "Seal A Better Place",
       image: "images/seal_a_better_place.gif",
       description:
-      "This November I took part in the #30DayMapChallenge. This seal gif is my favourite map - I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey during 2008.",
+      "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey throughout 2008.",
       github: "https://github.com/MMarochov/sealz",
     },
     {
@@ -107,7 +107,7 @@
       <About>
         I'm Mel Marochov, a trainee geospatial data scientist and developer at
         Ordnance Survey. In my spare time I love skateboarding, wild swimming,
-        and climbing! Over the past year or so I've had the chance to learn a
+        and climbing! Over the past year I've had the chance to learn a
         lot of interesting stuff from very talented people, ranging from Python
         and web dev to data visualisation and GeoAI ethics... but I'm only just
         beginning to scratch the surface.

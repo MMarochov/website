@@ -52,12 +52,19 @@
     color: rgb(214, 226, 245);
   }
 
+
   @keyframes scroll {
     0% {
       transform: translateY(0);
     }
     100% {
       transform: translateY(18px);
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    a {
+      display: none;
     }
   }
 </style>
