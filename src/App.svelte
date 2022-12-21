@@ -231,6 +231,7 @@
   }
 
   :global(main) {
+    padding: 20px;
     background: radial-gradient(
         circle at 65% 8%,
         rgba(255, 0, 0, 0.3),

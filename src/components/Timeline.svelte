@@ -173,6 +173,7 @@
   @media only screen and (max-width: 810px) {
     #timeline {
       padding: 0.6rem 0 0.6rem;
+      max-width: 100%;
     }
 
     #timeline-entry {
@@ -183,6 +184,7 @@
       justify-content: left;
       padding: 0.6rem;
       background: rgba(0, 0, 0, 0.023);
+      
     }
 
     #date {

@@ -139,7 +139,7 @@
       align-items: center;
     }
     h1 {
-      font-size: 4em;
+      font-size: 3em;
       max-width: 270px;
     }
     .intro {
