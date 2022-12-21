@@ -75,6 +75,7 @@
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
+    border-radius: 10px;
     padding: 1rem;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
