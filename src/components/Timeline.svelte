@@ -77,6 +77,7 @@
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
     padding: 1rem;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
 
   #panel:hover {
