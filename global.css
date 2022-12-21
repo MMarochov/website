@@ -43,6 +43,7 @@ textarea {
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 2px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input:disabled {
