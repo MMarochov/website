@@ -6,8 +6,16 @@ This is my personal website, made with Svelte.
 - Mouse Message
 - CV download / view
 
-## Deployment
+## Dev and Deployment
 
-To deploy, run the following commands in the terminal:
+For dev:
+- ```npm install```
+- ```npm run dev```
+
+To deploy on github pages, make a ```gh-pages``` branch, go to Settings > Pages > Build and Deployment and set branch to ```gh-pages /(root)```. 
+
+Then run the following commands in the terminal:
 - ```npm run build```
 - ```npm run deploy```
+
+And watch Actions do some magic!
