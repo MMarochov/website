@@ -34,7 +34,7 @@
       months: "September - March",
       years: "2021/22",
       description:
-        "For my first placement on the OS Grad scheme I joined the Research and Innovation teams. I focused on advancing OS' efforts to incorporate ethical practice in their workflows which use geospatial data and artificial intelligence (GeoAI). Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and creating a Model Hub for OS's machine learning algorithms.",
+        "For my first placement on the OS Grad scheme I joined the Research and Innovation teams. I focused on advancing OS's efforts to incorporate ethical practice in their workflows which use geospatial data and artificial intelligence (GeoAI). Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and creating a Model Hub for OS's machine learning algorithms.",
     },
     {
       open: false,
@@ -72,25 +72,25 @@
       webpage: "https://nice-bay-0c89e3803.1.azurestaticapps.net/",
     },
     {
-      title: "This-OS-Map-Does-Not-Exist",
-      image: "images/os_map_blur.PNG",
-      description:
-        "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
-    },
-    {
       title: "Mapping the Irish Sea Ice Stream",
       image: "images/bgs_map.PNG",
       description:
-        "I helped make a map published by BGS. It shows the sea floor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
+      "I helped make a map published by BGS. It shows the sea floor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
       webpage:
-        "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/",
+      "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/",
     },
     {
       title: "Seal A Better Place",
       image: "images/seal_a_better_place.gif",
       description:
-        "This November I took part in the #30DayMapChallenge. This seal gif is my favourite map - I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey during 2008.",
+      "This November I took part in the #30DayMapChallenge. This seal gif is my favourite map - I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey during 2008.",
       github: "https://github.com/MMarochov/sealz",
+    },
+    {
+      title: "This-OS-Map-Does-Not-Exist",
+      image: "images/os_map_blur.PNG",
+      description:
+        "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
     },
   ];
 </script>
