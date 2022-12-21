@@ -73,7 +73,7 @@
     },
     {
       title: "This-OS-Map-Does-Not-Exist",
-      image: "images/osmap_blur.PNG",
+      image: "images/os_map_blur.PNG",
       description:
         "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
     },
