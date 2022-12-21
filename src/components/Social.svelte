@@ -22,4 +22,10 @@
     display: flex;
     height: 30px;
   }
+
+  @media only screen and (max-width: 670px) {
+    div {
+      padding-top: 20px;
+    }
+  }
 </style>

@@ -63,7 +63,7 @@
   }
 
   @media only screen and (max-width: 670px) {
-    p {
+    a {
       display: none;
     }
   }
