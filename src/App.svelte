@@ -280,6 +280,7 @@
     #landing-page {
       max-width: 500px;
       margin: auto;
+      justify-content: center;
     }
   }
 </style>
