@@ -55,6 +55,7 @@
     user-select: none;
     bottom: 20px;
     color: #000;
+    cursor: pointer;
   }
 
   .back-to-top.hidden {

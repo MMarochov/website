@@ -75,7 +75,7 @@
       title: "Mapping the Irish Sea Ice Stream",
       image: "images/bgs_map.PNG",
       description:
-      "I helped make a map published by BGS. It shows the sea floor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
+      "I helped make a map published by BGS. It shows the seafloor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
       webpage:
       "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/",
     },
