@@ -25,7 +25,7 @@
       months: "April - September",
       years: "2022",
       description:
-        "After six months on the Ordnance Survey Graduate Scheme, I joined the Rapid Prototyping Team and got thrown in at the deep end of data science with a bunch of super proficient developers. Having the chance to work on a diverse array of  projects led me to enhance a variety of skills, from Python programming to agile development. On my first day in the team I didn't have the foggiest clue how to build a website, but now I've made this one, yey! Creating cool prototypes using geospatial data in a fast-paced (and fun) environment made the RPT my favourite placement.",
+        "After six months on the Ordnance Survey Graduate Scheme, I joined the Rapid Prototyping Team and got thrown in at the deep end of data science with a bunch of super proficient developers. Working on a diverse array of projects led me to enhance skills such as Python programming and agile development. On my first day in the team I didn't know how to build a website, but now I've made this one! Creating cool prototypes using geospatial data in a fast-paced (and fun) environment made the RPT my favourite placement.",
     },
     {
       open: false,
@@ -75,15 +75,15 @@
       title: "Mapping the Irish Sea Ice Stream",
       image: "images/bgs_map.PNG",
       description:
-      "I helped make a map published by BGS. It shows the seafloor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
+        "I helped make a map published by BGS. It shows the seafloor geomorphology offshore of Angelesy - including features such as Drumlins and iceberg plough marks left by the last ice sheet.",
       webpage:
-      "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/",
+        "https://www.bgs.ac.uk/news/new-geological-map-of-offshore-anglesey-released/",
     },
     {
       title: "Seal A Better Place",
       image: "images/seal_a_better_place.gif",
       description:
-      "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey throughout 2008.",
+        "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey throughout 2008.",
       github: "https://github.com/MMarochov/sealz",
     },
     {
@@ -107,10 +107,9 @@
       <About>
         I'm Mel Marochov, a trainee geospatial data scientist and developer at
         Ordnance Survey. In my spare time I love skateboarding, wild swimming,
-        and climbing! Over the past year I've had the chance to learn a
-        lot of interesting stuff from very talented people, ranging from Python
-        and web dev to data visualisation and GeoAI ethics... but I'm only just
-        beginning to scratch the surface.
+        and climbing! Over the past year I've had the chance to learn a lot,
+        from Python and web dev to data visualisation and GeoAI ethics... but
+        I'm only just beginning to scratch the surface.
       </About>
       <Social />
       <ScrollArrow href="#experience" />
@@ -148,7 +147,7 @@
       </div>
     </section>
   </article>
-  <footer>Designed by Mel Marochov | 2023</footer>
+  <footer>Designed and built by Mel Marochov | 2023</footer>
 </main>
 
 <style>
@@ -175,7 +174,7 @@
     color: #baaec8;
     text-decoration: none;
     padding: 8px;
-  
+
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
     font-size: 1.2rem;

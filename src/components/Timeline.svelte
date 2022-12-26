@@ -156,6 +156,7 @@
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
       width: 100%;
       align-items: flex-end;
+      border-radius: 0px;
     }
 
     #date {

@@ -25,9 +25,8 @@
     </div>
     <Typed
       strings={[
-        "I like making things,",
-        "and I think data science is pretty cool!",
-        "oh also, the Earth is flat.",
+        "I'm a geospatial data scientist",
+        "and a developer.",
       ]}
       loop="true"
       typeSpeed="9"
