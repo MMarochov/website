@@ -92,6 +92,13 @@
       description:
         "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
     },
+    {
+      title: "Tracking Ice Cubes",
+      image: "images/iceberga69a.PNG",
+      description:
+        "I'm using MovingPandas to analyse the tracks of icebergs in the BYU/NIC iceberg database.",
+      github: "https://github.com/MMarochov/big_cold_white_thing",
+    },
   ];
 </script>
 
@@ -100,7 +107,7 @@
     <NavBar />
     <section id="landing-page">
       <Name>
-        <span slot="intro">It's-a me,</span>
+        <span slot="intro">It's me,</span>
         <span slot="name">Melio</span>
         <!-- <span slot="typed"></span> -->
       </Name>
