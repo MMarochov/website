@@ -150,4 +150,10 @@
       max-width: 270px;
     }
   }
+
+  @media only screen and (max-width: 510px) {
+    img {
+    width: 38%;
+  }
+  }
 </style>
