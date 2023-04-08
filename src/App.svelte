@@ -85,12 +85,14 @@
       description:
         "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey throughout 2008.",
       github: "https://github.com/MMarochov/sealz",
+      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7019615101833895936?utm_source=share&utm_medium=member_android",
     },
     {
-      title: "This-OS-Map-Does-Not-Exist",
-      image: "images/os_map_blur.PNG",
+      title: "#30DayMapChallenge",
+      image: "images/17_Map_without_computer.jpg",
       description:
-        "Coming soon! I'm currently figuring out how to use a Generative Adversarial Network to create fake OS maps.",
+        "For the #30DayMapChallenge I created this lit map in the form of a candle. The process required lots of patience, especially since southern Europe seemed intent on sinking. When the wax begins to melt, the continents start to shift!",
+      linkedin: "https://www.linkedin.com/posts/ordnance-survey_30daymapchallenge-weareos-activity-7005108741201100801-H32f?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy",
     },
     {
       title: "Tracking Ice Cubes",
@@ -113,8 +115,7 @@
       </Name>
       <About>
         I'm Mel Marochov, a trainee geospatial data scientist and developer at
-        Ordnance Survey. In my spare time I love skateboarding, wild swimming,
-        and climbing! Over the past year I've had the chance to learn a lot,
+        Ordnance Survey. In my spare time I enjoy skateboarding and climbing! Over the past year I've had the chance to learn a lot,
         from Python and web dev to data visualisation and GeoAI ethics... but
         I'm only just beginning to scratch the surface.
       </About>
@@ -149,9 +150,10 @@
             description={w.description}
             github={w.github}
             webpage={w.webpage}
+            twitter={w.twitter}
+            linkedin={w.linkedin}
           />
         {/each}
-      </div>
     </section>
   </article>
   <footer>Designed and built by Mel Marochov | 2023</footer>

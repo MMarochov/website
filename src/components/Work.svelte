@@ -7,8 +7,12 @@
   export let description;
   export let github;
   export let webpage;
+  export let twitter
+  export let linkedin;
   let github_icon = "images/Github";
   let website_icon = "images/Website";
+  let twitter_icon = "images/twitter";
+  let linkedin_icon = "images/LinkedIn";
 </script>
 
 <article id="card">
@@ -23,6 +27,12 @@
   {#if webpage}
     <SocialButton href={webpage} src={website_icon} alt="Link to web page" />
   {/if}
+  {#if twitter}
+  <SocialButton href={twitter} src={twitter_icon} alt="Link to web page" />
+{/if}
+{#if linkedin}
+<SocialButton href={linkedin} src={linkedin_icon} alt="Link to web page" />
+{/if}
 </article>
 
 <style>
