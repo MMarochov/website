@@ -137,7 +137,8 @@
         />
       {/each}
       <section id="cv-download">
-        <a id="download" download href="images/rick.jpg">Download CV</a>
+        <a id="download" href="https://mmarochov.github.io/cv/">View CV</a>
+        <a id="download" download href="cv.pdf">Download CV</a>
       </section>
     </section>
     <section id="work">
@@ -183,7 +184,7 @@
     color: #baaec8;
     text-decoration: none;
     padding: 8px;
-
+    margin: 10px;
     border-radius: 5px;
     font-family: "Permanent Marker", cursive;
     font-size: 1.2rem;
