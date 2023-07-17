@@ -12,11 +12,29 @@
     {
       open: true,
       org: "Ordnance Survey",
+      role: "Associate Data Scientist",
+      months: "June - present",
+      years: "2023",
+      description:
+        "I just joined the Earth Observation and Analytics squad in the Innovation team at OS, where I've been working on enhancing the robustness of our aerial imagery and machine learning approach for monitoring peatland health, to meet the required standards for reliable carbon accounting.",
+    },
+    {
+      open: false,
+      org: "Ordnance Survey",
+      role: "Graduate Data Scientist",
+      months: "April - June",
+      years: "2023",
+      description:
+        "I spent a short placement with the public sector-facing Data Science team at OS where I increased my familiarity with scalability in data science workflows, particularly through using DataBricks, compute clusters and mounted cloud storage which the team use to create and improve GB-wide datasets.",
+    },
+    {
+      open: false,
+      org: "Ordnance Survey",
       role: "Graduate Technical Consultant",
-      months: "September - present",
+      months: "September - April",
       years: "2022/23",
       description:
-        "As part of the Developer Experience team within Consultancy and Technical Services at OS, I've worked on shaping a critical national dataset that will underpin the census and now I'm making an interactive webmap for a famous person!",
+        "As part of the Developer Experience team within Consultancy and Technical Services at OS, I worked under time pressure to shape a critical national dataset that will underpin the census, and even made an interactive webmap for a famous person!",
     },
     {
       open: false,
@@ -85,20 +103,22 @@
       description:
         "This November I took part in the #30DayMapChallenge. This seal gif is the favourite map I made. I used the MovingPandas and GeoPandas Python libraries to analyse the seal's journey throughout 2008.",
       github: "https://github.com/MMarochov/sealz",
-      linkedin: "https://www.linkedin.com/feed/update/urn:li:activity:7019615101833895936?utm_source=share&utm_medium=member_android",
+      linkedin:
+        "https://www.linkedin.com/feed/update/urn:li:activity:7019615101833895936?utm_source=share&utm_medium=member_android",
     },
     {
       title: "#30DayMapChallenge",
       image: "images/17_Map_without_computer.jpg",
       description:
         "For the #30DayMapChallenge I created this lit map in the form of a candle. The process required lots of patience, especially since southern Europe seemed intent on sinking. When the wax begins to melt, the continents start to shift!",
-      linkedin: "https://www.linkedin.com/posts/ordnance-survey_30daymapchallenge-weareos-activity-7005108741201100801-H32f?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy",
+      linkedin:
+        "https://www.linkedin.com/posts/ordnance-survey_30daymapchallenge-weareos-activity-7005108741201100801-H32f?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy",
     },
     {
       title: "Tracking Ice Cubes",
       image: "images/iceberga69a.PNG",
       description:
-        "I'm using MovingPandas to analyse the tracks of icebergs in the BYU/NIC iceberg database.",
+        "I'm using MovingPandas to analyse the tracks of icebergs in the BYU/NIC iceberg database. Stay tuned to see how it turns out!",
       github: "https://github.com/MMarochov/big_cold_white_thing",
     },
   ];
@@ -114,10 +134,11 @@
         <!-- <span slot="typed"></span> -->
       </Name>
       <About>
-        I'm Mel Marochov, a trainee geospatial data scientist and developer at
-        Ordnance Survey. In my spare time I enjoy skateboarding and climbing! Over the past year I've had the chance to learn a lot,
-        from Python and web dev to data visualisation and GeoAI ethics... but
-        I'm only just beginning to scratch the surface.
+        I'm Mel Marochov, I work in the geospatial realm as an Associate Data
+        Scientist and developer at Ordnance Survey. In my spare time I enjoy
+        skateboarding, cycling, and climbing! Over the past few years I've had
+        the chance to learn a lot, from Python and web dev to data visualisation
+        and GeoAI ethics... but I'm only just beginning to scratch the surface.
       </About>
       <Social />
       <ScrollArrow href="#experience" />
@@ -155,6 +176,7 @@
             linkedin={w.linkedin}
           />
         {/each}
+      </div>
     </section>
   </article>
   <footer>Designed and built by Mel Marochov | 2023</footer>
