@@ -1,31 +1,53 @@
 <!-- Social.svelte -->
 <script>
-  // Imports
-  import SocialButton from "../components/SocialButton.svelte";
+  export let name;
+  export let href;
+  export let icon;
 </script>
 
-<div>
-  <SocialButton
-    href="https://uk.linkedin.com/in/melanie-marochov-a41385172"
-    src="images/LinkedIn"
-    alt="LinkedIn"
-  />
-  <SocialButton
-    href="https://github.com/MMarochov"
-    src="images/Github"
-    alt="Github"
-  />
-</div>
+<p class="hover-1">
+  <i class={icon}></i>
+  <a {href} target="_blank">{name}</a>
+</p>
 
 <style>
-  div {
+
+  .hover-1 {
+  background: linear-gradient(
+    to right top,
+    #4286ae,
+    #4c87b0,
+    #4b9fc1,
+    #51b7cf,
+    #62cfd8,
+    #7ce6de
+  );
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: 0.4s;
+}
+
+.hover-1:hover {
+  background-size: 100% 100%;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+}
+  p {
+    margin: 8px;
+    padding: 3px 10px;
     display: flex;
-    height: 30px;
+    align-items: center;
+    border-radius: 10px;
   }
 
-  @media only screen and (max-width: 670px) {
-    div {
-      padding-top: 20px;
-    }
+  i {
+    font-size: larger;
+  }
+
+  a {
+    margin-left: 5px;
   }
 </style>

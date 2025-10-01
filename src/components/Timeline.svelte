@@ -5,11 +5,12 @@
 
   // Props
   export let open;
-  export let org;
   export let role;
+  export let team;
   export let months;
-  export let years;
   export let description;
+  export let skills;
+  export let years;
 
   let isOpen = false;
   const toggle = () => (isOpen = !isOpen);
@@ -20,24 +21,29 @@
   <section id="timeline-entry">
     <div id="date">
       <p>{months}</p>
-      <p>{years}</p>
+      <p class="date">{years}</p>
     </div>
     <summary id="panel" on:click={toggle}>
       <button>
-        {role} @ {org}
+        {role} | {team}
       </button>
       {#if isOpen}
         <p id="description" transition:slide={{ duration: 300 }}>
           {description}
         </p>
       {/if}
+      <section class="skill-container">
+        <p>Core Skills:</p>
+        {#each skills as s}
+          <div class="skill">{s}</div>
+        {/each}
+      </section>
     </summary>
   </section>
 </article>
 
 <style>
   #timeline {
-    width: 100%;
     max-width: 960px;
     display: flex;
   }
@@ -46,20 +52,45 @@
     position: relative;
     width: 100%;
     margin: 0px;
-    padding: 0.6rem 0 0.6rem;
+    padding: 0.4rem 0 0.4rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 1.1rem;
-    font-weight: 490;
   }
 
   #date {
-    width: 15%;
+    width: 8%;
     padding-top: 0.3rem;
-    font-family: "Lucida Sans Typewriter";
     font-size: 0.8rem;
     font-weight: bold;
+  }
+
+  .skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #a0a0a0;
+    font-weight: bold;
+  }
+
+  .skill {
+    color: white;
+    background: linear-gradient(
+      to right top,
+      #3685ab,
+      #4286ae,
+      #4c87b0,
+      #4b9fc1,
+      #51b7cf,
+      #62cfd8,
+      #7ce6de
+    );
+    border-radius: 10px;
+    width: fit-content;
+    padding: 0 10px;
+    margin: 4px;
+    font-weight: normal;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
   }
 
   p {
@@ -71,18 +102,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 70%;
+    width: 80%;
     overflow: hidden;
     position: relative;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
-    border-radius: 10px;
-    padding: 1rem;
+    border-radius: 3px;
+    padding: 0.5rem;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
+    font-size: 0.9rem;
+    margin: 0 0 0 70px;
   }
 
   #panel:hover {
-    background: rgba(0, 0, 0, 0.023);
+    background: rgba(220, 220, 220, 0.552);
   }
 
   button {
@@ -91,18 +124,18 @@
     background: none;
     color: inherit;
     cursor: pointer;
-    font-family: "Lucida Sans Typewriter";
+    font-weight: bold;
   }
 
   #description {
     text-align: left;
-    padding-top: 15px;
+    padding-top: 5px;
   }
 
   #timeline-entry:before {
     top: 0;
     bottom: 0;
-    left: 20%;
+    left: 12%;
     position: absolute;
     content: "";
     width: 0.1rem;
@@ -114,7 +147,7 @@
     content: "";
     height: 0.1rem;
     width: 0.8rem;
-    left: 20%;
+    left: 12%;
     background: #000;
     position: absolute;
     box-shadow: 1px 1px 6px #0000003a, -1px -1px 6px #0000001f;
@@ -134,7 +167,7 @@
 
   @media only screen and (max-width: 1050px) {
     #timeline {
-      max-width: 80%;
+      max-width: 100%;
     }
 
     #timeline-entry {
@@ -157,6 +190,7 @@
       width: 100%;
       align-items: flex-end;
       border-radius: 0px;
+      margin: 0;
     }
 
     #date {
@@ -179,11 +213,10 @@
     #timeline-entry {
       display: flex;
       flex-direction: column;
-      border-radius: 10px;
+      border-radius: 3px;
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
       justify-content: left;
       padding: 0.6rem;
-      background: rgba(0, 0, 0, 0.023);
     }
 
     #date {

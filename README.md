@@ -1,24 +1,38 @@
-# Personal Website (the responsive version)
-This is my personal website, made with Svelte.
+# sv
 
-## Dev notes
-- All input text is in app.svelte (named slots?)
-- Mouse message
-- CV download / view
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Dev and Deployment
+## Creating a project
 
-For dev:
-- ```npm install```
-- ```npm run dev```
+If you're seeing this, you've probably already done this step. Congrats!
 
-To deploy on github pages, make a ```gh-pages``` branch, go to Settings > Pages > Build and Deployment and set branch to ```gh-pages /(root)```. 
+```sh
+# create a new project in the current directory
+npx sv create
 
-Then run the following commands in the terminal:
-- ```npm run build```
-- ```npm run deploy```
+# create a new project in my-app
+npx sv create my-app
+```
 
-If re-deploying, don't forget to ```git merge origin/main``` to bring changes from the ```main``` branch to ```gh-pages```.
+## Developing
 
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-Then watch Actions do some magic!
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
