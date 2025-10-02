@@ -1,22 +1,23 @@
 // skills.js
 
 export const skills = [ // List of contact information
+      {
+        name: "Web Development",
+        text: "HTML, CSS, JavaScript, TypeScript, Leaflet, Maplibre GL JS, Svelte, Hugo, Node, NPM"
+    },
     {
         name: "Geospatial Data Analysis",
-        text: "QGIS, ArcGIS, SQL, PostGIS, Remote Sensing Imagery Processing (Aerial, Sentinel-2, Landsat), GeoPandas, MovingPandas, Shapely, Rasterio, Fiona, Gdal, OSdatahub"
+        text: "QGIS, ArcGIS, SQL, PostGIS, Remote Sensing Imagery Processing, GeoPandas, MovingPandas, Shapely, Rasterio, Fiona, Gdal, Osdatahub"
     },
     {
         name: "Data Science",
-        text: "Python, Flask, Pandas, Matplotlib, Numpy, Scikit-learn, Scikit-image"
+        text: "Python, Flask, Pandas, Matplotlib, Numpy, FastAPI, Scikit-learn, Scikit-image"
     }, 
     {
         name: "Platforms, Software and Agile Methodologies",
-        text: "Azure Machine Learning Studio, Databricks, Anaconda, Mamba, Git, GitHub, Azure DevOps, Scrum developer, Scrum master"
+        text: "Databricks, Anaconda, Mamba, Git, GitHub, Azure DevOps, Scrum developer, Scrum master"
     },
-    {
-        name: "Web Development",
-        text: "HTML, CSS, JavaScript, TypeScript, Leaflet, Svelte, Hugo, Node, NPM"
-    },
+  
     {
         name: "Prototyping",
         text: "Creative Problem Solving, Collaborative Working, User Testing and Feedback"

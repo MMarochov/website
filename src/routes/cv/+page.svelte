@@ -34,7 +34,7 @@
       <p class="intro">I'm a geospatial developer and data scientist. I’m adaptable, always learning, and ready to be thrown in at the deep end! Outside of work I love being creative or out in nature ⋆｡☾ ﾟ⋆｡ </p>
       <div class="social">
         {#each socials as s}
-          <Social social={s.social} name={s.name} href={s.href} icon={s.icon} />
+          <Social  name={s.name} href={s.href} icon={s.icon} />
         {/each}
       </div>
     </header>
@@ -47,7 +47,7 @@
         src={oslogo}
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="Over the past two years I've strengthened a diverse array of skills from prototyping new datasets to typescript development. I'm particularly proud of designing and building a Business Intelligence tool to democratise access to OS data for technical and non-technical users alike, and co-organising the first ever OS Data Science Conference."
+        description="Strengthened a diverse array of skills from TypeScript development to prototyping new datasets and sharing best practice across the business. Designed and co-built OS Maps for Power BI, a Beta tool developed iteratively based on customer feedback, with the aim of democratising access to OS data for technical and non-technical users alike."
       />
       <Experience
         position="Graduate Scheme"
@@ -56,7 +56,7 @@
         src={oslogo}
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="Throughout the graduate scheme I specialised in spatial data science, web development, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I traversed the business through four placements:"
+        description="Specialised in map-based web development, spatial data science, and practical ethics at the intersection of geospatial data and artifical intelligence (GeoAI). I traversed the business through four placements:"
       />
       {#each placements as p}
         <Timeline
@@ -89,19 +89,6 @@
           {#each skills as s}
             <Skill name={s.name}>{s.text}</Skill>
           {/each}
-        </section>
-        <section class="box">
-          <h2>Publications</h2>
-
-          <p class="hover-1">
-            <a target="_blank" href="https://tc.copernicus.org/articles/15/5041/2021/"
-              >Image classification of marine-terminating outlet glaciers in
-              Greenland using deep learning methods</a
-            >
-          </p>
-          <p>
-            Marochov et al. 2021 | The Cryosphere, European Geosciences Union
-          </p>
         </section>
         <section class="box">
           <h2>Awards</h2>
@@ -180,7 +167,7 @@
 
   .content {
     display: flex;
-    gap: 2em;
+    gap: 3rem;
     flex-direction: column;
   }
 
@@ -192,6 +179,7 @@
   h3 {
     font-size: 1.1em;
     margin: 0;
+    text-align: left;
   }
 
   .hover-1 {

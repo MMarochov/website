@@ -87,7 +87,7 @@
     );
     border-radius: 10px;
     width: fit-content;
-    padding: 0 10px;
+    padding: 2px 10px;
     margin: 4px;
     font-weight: normal;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.148);
