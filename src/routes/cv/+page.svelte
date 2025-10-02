@@ -82,7 +82,6 @@
         />
       {/each}
     </section>
-    <section />
     <section id="duo-column">
       <div class="col first">
         <section class="box">
@@ -168,7 +167,7 @@
 <style>
   main {
     width: 100%;
-    max-width: 750px;
+    max-width: 850px;
     background: white;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
     border-radius: 5px;
@@ -176,6 +175,13 @@
     flex-direction: column;
     margin: 0 auto;
     padding: 4em 6em;
+    box-sizing: border-box;
+  }
+
+  .content {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
   }
 
   .intro {
@@ -285,14 +291,10 @@
 
   section {
     text-align: -webkit-center;
-    margin: 60px 0;
+    
   }
 
-  footer {
-    color: white;
-    text-align: center;
-    padding: 40px;
-  }
+
 
   @media only screen and (max-width: 800px) {
     #duo-column {
@@ -304,6 +306,13 @@
       width: 100%;
       margin: 0;
     }
+
+  }
+
+    @media only screen and (max-width: 700px) {
+        main {
+            padding: 1em 2em;
+        }
 
   }
 </style>

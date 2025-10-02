@@ -6,7 +6,7 @@
 </script>
 
 <div class="app">
-	<Header />
+	<!-- <Header /> -->
 
 	<main>
 		{@render children()}
@@ -24,16 +24,17 @@
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	main {
-		flex: 1;
+		/* flex: 1; */
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: 3rem 0 0 0;
 		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
+		margin: 0;
 		box-sizing: border-box;
 	}
 
@@ -44,6 +45,7 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
+		text-align: center;
 	}
 
 	footer a {
@@ -55,4 +57,10 @@
 			padding: 12px 0;
 		}
 	}
+
+	@media only screen and (max-width: 950px) {
+        main {
+            padding: 0;
+        }
+    }
 </style>
