@@ -213,6 +213,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    width: fit-content;
   }
 
   h2 {
