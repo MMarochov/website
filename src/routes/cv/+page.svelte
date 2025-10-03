@@ -31,7 +31,7 @@
 				<img src={headshot} alt="headshot" />
 			</picture>
       <h1>Melanie Marochov</h1>
-      <p class="intro">I'm a geospatial developer and data scientist. I’m adaptable, always learning, and ready to be thrown in at the deep end! Outside of work I love being creative or out in nature ⋆｡☾ ﾟ⋆｡ </p>
+      <p class="intro">I'm a geospatial developer and data scientist with a passion for sustainability and the environment. I’m adaptable, always learning, and ready to be thrown in at the deep end! Outside of work I love being creative or out in nature ⋆｡☾ ﾟ⋆｡ </p>
       <div class="social">
         {#each socials as s}
           <Social  name={s.name} href={s.href} icon={s.icon} />
@@ -47,7 +47,7 @@
         src={oslogo}
         alt="Ordnance Survey logo"
         href="https://www.ordnancesurvey.co.uk/"
-        description="Strengthened a diverse array of skills from TypeScript development to prototyping new datasets and sharing best practice across the business. Designed and co-built OS Maps for Power BI, a Beta tool developed iteratively based on customer feedback, with the aim of democratising access to OS data for technical and non-technical users alike."
+        description="Don't let the job title fool you! Over the past two years I've spent most of my time co-developing OS Maps for Power BI, a Beta tool designed iteratively based on customer feedback, to democratise access to OS data for technical and non-technical users alike. I engaged with customers to gather and prioritise requirements, led the UI design, built features (TypeScript), incorporated logging and built a dashboard to understand feature usage over the course of the beta. Alongside this, I've gained experience in prototyping new datasets and sharing coding best practice (I'm a Git stan) across the business."
       />
       <Experience
         position="Graduate Scheme"
@@ -70,6 +70,12 @@
         />
       {/each}
     </section>
+    <section class="box skills">
+          <h2>Skills</h2>
+          {#each skills as s}
+            <Skill name={s.name}>{s.text}</Skill>
+          {/each}
+        </section>
     <section class="education">
       <h2>Education</h2>
       {#each education as e}
@@ -85,9 +91,35 @@
     <section id="duo-column">
       <div class="col first">
         <section class="box">
-          <h2>Skills</h2>
-          {#each skills as s}
-            <Skill name={s.name}>{s.text}</Skill>
+          <h2>Projects</h2>
+          {#each projects as p}
+            <div class="project-title">
+              <h3>{p.title}</h3>
+              {#if p.link}
+                <a class="link-icon" target="_blank" href={p.link}
+                  ><img
+                    class="link"
+                    src={link}
+                    alt="link"
+                  /></a
+                >
+              {/if}
+            </div>
+            <p>{p.description}</p>
+          {/each}
+        </section>        
+      </div>
+      <div class="col second">
+        <section class="box">
+          <h2>Work Experience</h2>
+          {#each workExperience as w}
+            <WorkExperienceEntry
+              position={w.position}
+              org={w.org}
+              date={w.date}
+              src={w.src}
+              alt={w.alt}
+            />
           {/each}
         </section>
         <section class="box">
@@ -106,38 +138,6 @@
             description=""
           />
         </section>
-      </div>
-      <div class="col second">
-        <section class="box">
-          <h2>Projects</h2>
-          {#each projects as p}
-            <div class="project-title">
-              <h3>{p.title}</h3>
-              {#if p.link}
-                <a class="link-icon" target="_blank" href={p.link}
-                  ><img
-                    class="link"
-                    src={link}
-                    alt="link"
-                  /></a
-                >
-              {/if}
-            </div>
-            <p>{p.description}</p>
-          {/each}
-        </section>
-        <section class="box">
-          <h2>Work Experience</h2>
-          {#each workExperience as w}
-            <WorkExperienceEntry
-              position={w.position}
-              org={w.org}
-              date={w.date}
-              src={w.src}
-              alt={w.alt}
-            />
-          {/each}
-        </section>
         <section class="box">
           <h2>Interests</h2>
           <div id="interest">
@@ -145,7 +145,7 @@
               <img class="interest" src={i.src} alt={i.alt} />
             {/each}
           </div>
-        </section>
+        </section>                    
       </div>
     </section>
   </div>
@@ -181,12 +181,6 @@
     margin: 0;
     text-align: left;
   }
-
-  .hover-1 {
-    padding: 5px;
-    border-radius: 10px;
-  }
-
 
   .interest {
     height: 30px;
@@ -261,6 +255,10 @@
     margin: 20px 0;
   }
 
+  .skills {
+    margin: 0;
+  }
+
   img {
     width: 30%;
     border-radius: 50%;
@@ -296,12 +294,23 @@
       margin: 0;
     }
 
+    img {
+      width: 35%;
+    }
+
   }
 
     @media only screen and (max-width: 700px) {
         main {
-            padding: 1em 2em;
+            padding: 2em;
         }
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    img {
+      width: 45%;
+    }
 
   }
 </style>

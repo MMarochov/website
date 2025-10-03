@@ -15,7 +15,7 @@ export const skills = [ // List of contact information
     }, 
     {
         name: "Platforms, Software and Agile Methodologies",
-        text: "Databricks, Anaconda, Mamba, Git, GitHub, Azure DevOps, Scrum developer, Scrum master"
+        text: "Databricks, Anaconda, Mamba, Git, Conventional Commits, GitHub, Azure DevOps, Scrum developer, Scrum master"
     },
   
     {

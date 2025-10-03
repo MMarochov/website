@@ -12,7 +12,7 @@
   $: cssVarStyles = `--background:${background}`;
 </script>
 
-<div id="progress-circle" style={cssVarStyles} />
+<div id="progress-circle" style={cssVarStyles} ></div>
 
 <style>
   #progress-circle {

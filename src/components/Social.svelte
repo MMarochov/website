@@ -36,7 +36,7 @@ a {
   color: inherit;
 }
   p {
-    margin: 8px;
+    margin: 1em 0 0 0;
     padding: 3px 10px;
     display: flex;
     align-items: center;

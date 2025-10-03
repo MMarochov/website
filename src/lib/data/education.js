@@ -8,7 +8,7 @@ export const education = [
     date: "October 2019 ‑ December 2020",
     headline: "",
     description:
-      "The crux of my postgraduate research was to develop a method which uses deep learning for semantic segmentation of Sentinel-2 imagery containing marine-terminating glaciers in Greenland. Memorable moments include publishing a paper in one of the top peer-reviewed glaciology journals and demonstrating in undergraduate Remote Sensing practicals.",
+      "The crux of my postgraduate research was to develop a deep learning method for semantic segmentation of satellite imagery containing marine-terminating glaciers in Greenland. Memorable moments include publishing a paper in one of the top peer-reviewed glaciology journals and demonstrating in undergraduate Remote Sensing practicals.",
   },
   {
     education: "B. Sc., Geography",

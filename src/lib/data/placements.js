@@ -30,7 +30,7 @@ export const placements = [
       years: "2022",
       skills: ["Python", "Html", "Svelte", "CSS", "Agile", "Protoyping", "Git", "Presenting"],
       description:
-        "Got thrown in at the deep end of geospatial data science and web development. I worked on a plethora of customer-centric prototypes with geospatial data at their core, learning Python, web-dev, agile development, collaborative problem solving, and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
+        "This is where I really found my passion for web development and geospatial data science. I worked on a plethora of customer-centric prototypes with geospatial data at their core, learning Python, web-dev, agile development, collaborative problem solving, and presenting in regular business-wide demos. The fast-paced environment and fun team culture made the RPT my favourite placement.",
     },
     {
       open: true,
@@ -41,6 +41,6 @@ export const placements = [
       years: "2021/22",
       skills: ["GeoAI ethics", "Microsoft Azure", "DevOps", "Research", "Event Planning"],
       description:
-        "Focused on advancing OS's efforts to incorporate ethical practice in geospatial data and artificial intelligence (GeoAI) workflows. Some of the highlights were running an external-facing hybrid workshop on practical tools in GeoAI ethics, and introducing Model Cards through creating an internal Model Hub website for OS's machine learning algorithms.",
+        "Focused on advancing OS's efforts to incorporate ethical practice in geospatial data and artificial intelligence (GeoAI) workflows. Highlights were running an external hybrid workshop on practical tools in GeoAI ethics and introducing Model Cards through creating an internal Model Hub website for OS's machine learning algorithms.",
     },
   ];
